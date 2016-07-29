@@ -1,4 +1,12 @@
-#服务器有大量time_wait的链接
+<!--
+author: blacknc
+head: http://www.blacknc.com/img/2946691162925433.jpg
+title: linux系统网络连接出现大量time_wait解决方法
+tags: linux TCP 服务器 time_wait
+category: linux
+status: publish
+summary: linux系统网络连接出现大量time_wait解决方法
+-->
 
 ##time_wait介绍
   time_wait是tcp链接过程中的一种状态，time_wait的出现是由于服务器主动断开与客户端的链接，即在tcp四次分手中向客户端发送最后一个ack包之后就进入time_wait状态，等待时间为2MSL（max segment lifetime），MSL为数据包在网络中的最大生命周期，超过MSL后当前tcp链接在网络上的数据包就全部失效了，这样主动发起断开链接的服务器方进入time_wait状态等待2MSL时间是为了保证以后新建的链接不会受到旧链接的延迟数据包的影响。
