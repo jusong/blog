@@ -1,3 +1,13 @@
+<!--
+author: blacknc
+head: http://www.blacknc.com/img/2946691162925433.jpg
+title: linux系统网络连接出现大量time_wait解决方法
+tags: linux TCP 服务器 time_wait
+category: linux
+status: publish
+summary: linux系统网络连接出现大量time_wait解决方法
+-->
+
 #学习C/C++
 
 *以下内容摘自*[*一个程序员的Java和C++学习之路(整理)*](http://blog.csdn.net/ajian005/article/details/8003655) 
