@@ -1,6 +1,6 @@
 #学习C/C++
 
-*以下内容摘自*[一个程序员的Java和C++学习之路(整理)](http://blog.csdn.net/ajian005/article/details/8003655) 
+*以下内容摘自*[*一个程序员的Java和C++学习之路(整理)*](http://blog.csdn.net/ajian005/article/details/8003655) 
 
 ## 1. 书单
 
