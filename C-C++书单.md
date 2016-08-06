@@ -60,3 +60,12 @@ summary: 学习C/C++
 - **Library:** STL（java util package）、Boost、Qt(UI)、
 
 - **balance:** Apache、Nginx
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	    //为超链接加上target='_blank'属性
+		$('a[href^="http"]').each(function() {
+			$(this).attr('target', '_blank');
+		});
+	});
+</script>
