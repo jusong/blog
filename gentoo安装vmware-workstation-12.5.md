@@ -51,7 +51,7 @@ $ cd /tmp
 $ git clone https://aur.archlinux.org/vmware-patch.git
 ```
 
-解压vmware的模块代码包进行打补丁，再打包好放回去
+解压vmware的模块代码包进行打补丁，再打包好放回去 
 vmware的模块代码包在/usr/lib/vmware/modules/source/下面 
 ```
 $ ls /usr/lib/vmware/modules/source/
