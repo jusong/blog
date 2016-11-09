@@ -7,22 +7,23 @@ category: 编程
 status: publish
 summary: 学习C/C++
 -->
+# ls 不常用命令解析
 
 ls -l 列出文件的详细信息，包括文件大小，时间（访问，修改，更改），文件名称等，默认是按照文件名称的字典顺序排序，显示的大小单位是字节，时间默认是修改时间，即mtime，如下大致解释文件的三个文件属性的含义
 
-修改：mtime （modification time ）：最后（最新）一次修改文件**内容**的时间，ls -l默认列出的文件的时间就是这个时间
+修改：mtime(modification time)：最后（最新）一次修改文件**内容**的时间，ls -l默认列出的文件的时间就是这个时间  
+更改：ctime(status time)：写入文件、更改所有者、权限或链接设置时随Inode的内容更改而更改的时间，即最后（最新）一次文件属性变更的时间  
+访问：atime(access time)：最后（最新）一次读取文件或者执行文件时更改的时间
 
-更改：ctime （status time）：写入文件、更改所有者、权限或链接设置时随Inode的内容更改而更改的时间，即最后（最新）一次文件属性变更的时间
-
-访问：atime （access time）：最后（最新）一次读取文件或者执行文件时更改的时间
-
-**注意：修改文件的时候，不仅仅会更新文件的mtime，同时会更新文件的ctime，ctime的解释
-
+**注意**
+修改文件的时候，不仅仅会更新文件的mtime，同时会更新文件的ctime，ctime的解释
+```
 Time when file status was last changed. Changed by the
 following   functions:   chmod(),   chown(),  creat(),
 link(2),  mknod(),  pipe(),  unlink(2),  utime(),  and
 write().
-**
+```
+
 
 ## 1、时间显示
 a、指定显示哪种时间
@@ -33,10 +34,10 @@ ls -lc 				//显示ctime
 ```
 b、指定显示的时间格式
 ```
-ls -l topic.diff 				//默认格式为locale
+ls -l topic.diff				 				//默认格式为locale
 -rw-r--rw- 1 blacknc blacknc 2955 11月  9 13:45 topic.diff
 
-ls -l --time-style=iso topic.diff  //iso格式
+ls -l --time-style=iso topic.diff 				 //iso格式
 -rw-r--rw- 1 blacknc blacknc 2955 11-09 13:45 topic.diff
 
 ls -l --time-style=long-iso topic.diff  		//long-iso格式
@@ -51,16 +52,16 @@ a、按时间排序
 ```
 ls -lutr
 ```
--u: 文件时间（显示、排序都会用到）为atime，即最新访问时间，另外，-c表示ctime, 默认为mtime
--t: 按照文件时间排序，倒序排列，新（时间值大的）的文件在前面
--r: 逆序，将默认排序返转
+-u: 文件时间（显示、排序都会用到）为atime，即最新访问时间，另外，-c表示ctime, 默认为mtime  
+-t: 按照文件时间排序，倒序排列，新（时间值大的）的文件在前面  
+-r: 逆序，将默认排序返转  
 
 b、按大小排序
 ```
 ls -lSr
 ```
--S: 按文件大小排序，倒序排列，大的文件在前面
--r: 逆序，将默认排序返转
+-S: 按文件大小排序，倒序排列，大的文件在前面  
+-r: 逆序，将默认排序返转  
 
 
 
