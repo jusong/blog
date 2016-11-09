@@ -11,11 +11,11 @@ summary: 学习C/C++
 
 ls -l 列出文件的详细信息，包括文件大小，时间（访问，修改，更改），文件名称等，默认是按照文件名称的字典顺序排序，显示的大小单位是字节，时间默认是修改时间，即mtime，如下大致解释文件的三个文件属性的含义
 
-** 修改 **：mtime(modification time)：最后（最新）一次修改文件**内容**的时间，ls -l默认列出的文件的时间就是这个时间  
-** 更改 **：ctime(status time)：写入文件、更改所有者、权限或链接设置时随Inode的内容更改而更改的时间，即最后（最新）一次文件属性变更的时间  
-** 访问 **：atime(access time)：最后（最新）一次读取文件或者执行文件时更改的时间  
+__修改__：mtime(modification time)：最后（最新）一次修改文件__内容__的时间，ls -l默认列出的文件的时间就是这个时间  
+__更改__：ctime(status time)：写入文件、更改所有者、权限或链接设置时随Inode的内容更改而更改的时间，即最后（最新）一次文件属性变更的时间  
+__访问__：atime(access time)：最后（最新）一次读取文件或者执行文件时更改的时间  
 
-** 注意:修改文件的时候，不仅仅会更新文件的mtime，同时会更新文件的ctime，ctime的解释 **
+__注意:修改文件的时候，不仅仅会更新文件的mtime，同时会更新文件的ctime，ctime的解释__
 ```
 Time when file status was last changed. Changed by the
 following   functions:   chmod(),   chown(),  creat(),
