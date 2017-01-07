@@ -7,16 +7,16 @@ categories: svn
 
 **平时写代码用惯了emacs，所以在写markdown的时候也想用emacs编辑，主要是习惯了emacs纯键盘控制编辑的方式，不习惯鼠标点来点去的**
 
-#1.首先给emacs开启makrdown-mode功能
+## 1.首先给emacs开启makrdown-mode功能
 
-## a.下载markdown-model到load-path目录里：
+### a.下载markdown-model到load-path目录里：
 
 `$ wget http://jblevins.org/projects/markdown-mode/markdown-mode.el -P ~/.emacs.d/lisp`
 
 其中~/.emacs.d/lisp是我设置的load-path目录，设置方式是在~/.emacs文件里添加如下内容
 `(add-to-list 'load-path "~/.emacs.d/lisp")`
 
-## b.修改~/.emacs文件，开启markdown功能
+### b.修改~/.emacs文件，开启markdown功能
 
 ```
 cat >> ~/.emacs <<EOF
@@ -30,7 +30,7 @@ EOF
 
 此时使用emacs编辑以.makrdown或者.md为扩展名的文件会自动开启makrdown-mode模式，提供了关键字高亮，快捷键绑定的语法模板等
 
-#2.markdown的预览
+## 2.markdown的预览
 
 **要使用makrdown-moded的预览功能需要安装markdown命令，具体安装方法可自行百度/Google**
 
