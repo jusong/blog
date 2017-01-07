@@ -49,6 +49,7 @@ $ vmware
 ```
 
 则需要对vmware的模块代码包进行打补丁，这是在arch社区里找到的补丁
+
 ```
 $ cd /tmp
 $ git clone https://aur.archlinux.org/vmware-patch.git
