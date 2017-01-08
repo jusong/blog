@@ -8,5 +8,5 @@ permalink: /about/
 * content
 {:toc}
 
-## About the site
-This is a personal website of Blacknc, created with github and jekyll. 
+## 关于
+本站是我用github pages/jekyll搭建的个人博客站，欢迎您的关注

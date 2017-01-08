@@ -8,10 +8,9 @@ permalink: /projects/
 * content
 {:toc}
 
-# All my projects
-Following are projects started by me. 
+# 项目
 
-## Maze
+## Maze（迷宫游戏）
 * Website: [https://github.com/jusong/maze](https://github.com/jusong/maze)
 
-	It's a Maze by C++
+	开发语言：C++
