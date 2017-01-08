@@ -9,4 +9,4 @@ permalink: /about/
 {:toc}
 
 ## 关于
-本站是我用github pages/jekyll搭建的个人博客站，欢迎您的关注
+本站是我用github pages/jekyll搭建的个人博客站，输出是一种美德，为了记录自己，也希望能帮助那些需要的人
