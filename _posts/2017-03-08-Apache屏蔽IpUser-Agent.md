@@ -9,7 +9,7 @@ categories: apache
 
 ### Ip屏蔽
 
-首先需要搜出百度蜘蛛的Ip，它会后很多Ip，但是网段应该不会太多，用下面的命令找出其网段来
+首先需要搜出百度蜘蛛的Ip，它会有很多Ip，但是网段应该不会太多，用下面的命令找出其网段来
 ```
 $ cat /var/log/httpd/access_log.20170308 | grep Baiduspider | cut -d. -f1,2,3 | sort | uniq
 106.120.173
