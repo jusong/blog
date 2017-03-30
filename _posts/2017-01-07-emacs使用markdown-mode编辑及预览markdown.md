@@ -2,6 +2,7 @@
 layout: post
 title:  "emacs使用markdown-mode编辑及预览markdown"
 date:   2017-01-07 18:27:00 +0800
+author: blacknc
 categories: svn
 ---
 
