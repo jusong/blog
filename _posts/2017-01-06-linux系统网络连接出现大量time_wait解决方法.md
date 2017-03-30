@@ -2,6 +2,7 @@
 layout: post
 title:  "linux系统网络连接出现大量time_wait解决方法"
 date:   2017-01-06 02:28:47 +0800
+author: blacknc
 categories: linux tcp time_wait
 ---
 
