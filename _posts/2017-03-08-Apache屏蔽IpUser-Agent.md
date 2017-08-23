@@ -32,12 +32,18 @@ Deny From 106.38.241
 
 ### User-Agent屏蔽
 
-在apache配置文件里添加如下内容
+在apache配置文件里添加如下内容，屏蔽所有蜘蛛
 ```
-BrowserMatch "Baiduspider" bad_bot
+BrowserMatch "spider" bad_bot
+BrowserMatch "Spider" bad_bot
+<Location />
 Order Allow,Deny
 Allow from all
-Deny From evn=bad_bot
+Deny from env=bad_bot
+</Location>
 ```
 
-一般蜘蛛的user-agent不会变，这样不管它是什么Ip来的，只要user-agent包含Baiduspider这个关键词就会被屏蔽掉，修改完之后重启apache立即生效，负载就降下来了
+一般蜘蛛的user-agent不会变，这样不管它是什么Ip来的，只要user-agent包含spider/Spider关键词就会被屏蔽掉，修改完之后重启apache立即生效，负载就降下来了
+
+###重点
+这样一定时间屏蔽蜘蛛导致的后果就是网站在搜索引擎上的排名会严重下滑至消失，且恢复也比较困难，如果是有seo优化的网站，不建议这样做
